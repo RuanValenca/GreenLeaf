@@ -10,9 +10,9 @@ Projeto fullstack com React + TypeScript no frontend e Laravel no backend.
 
 ## Estrutura do projeto
 
-GreenLeaf/
-├── frontend/ # Aplicação React + TS
-├── backend/ # API Laravel
+GreenLeaf/  
+├── frontend/ # Aplicação React + TS  
+├── backend/ # API Laravel  
 └── README.md # Documentação do projeto
 
 ## Como rodar o projeto localmente
@@ -21,19 +21,20 @@ GreenLeaf/
 
 ```bash
 cd frontend
-npm install
-PORT=4000 npm start
-
+yarn install
+PORT=4000 yarn start
+```
 
 ### Backend
+
+```bash
 cd backend
 composer install
 cp .env.example .env
 php artisan key:generate
 php artisan serve --port=8081
-
+```
 
 O frontend estará disponível em [http://localhost:4000](http://localhost:4000).
 
 O backend estará disponível em [http://localhost:8081](http://localhost:8081).
-```
